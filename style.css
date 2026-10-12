@@ -2,7 +2,7 @@
   --bg: #f7f8fa;
   --text: #222;
   --muted: #666;
-  --accent: #4f6df5;
+  --accent: #2bc0a4;
   --card: #fff;
 }
 
@@ -22,7 +22,7 @@ body {
 .header {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(135deg, var(--accent), #8a5cf5);
+  background: linear-gradient(135deg, var(--accent), #5fe0c8);
   color: #fff;
 }
 
