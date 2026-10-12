@@ -1,9 +1,10 @@
 :root {
-  --bg: #f7f8fa;
-  --text: #222;
-  --muted: #666;
-  --accent: #2bc0a4;
-  --card: #fff;
+  --bg: #fdf8f5;
+  --text: #4a4458;
+  --muted: #8a8399;
+  --accent: #9fe0cf;
+  --card: #fffdfb;
+  --line: #eee4ee;
 }
 
 * {
@@ -22,8 +23,8 @@ body {
 .header {
   text-align: center;
   padding: 80px 20px;
-  background: linear-gradient(135deg, var(--accent), #5fe0c8);
-  color: #fff;
+  background: linear-gradient(135deg, var(--accent), #fbd5e5, #d9d2f5);
+  color: var(--text);
 }
 
 .header h1 {
@@ -56,8 +57,8 @@ main {
 
 .cards {
   list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   margin-top: 8px;
 }
@@ -67,13 +68,14 @@ main {
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 8px rgba(160, 140, 190, 0.12);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(160, 140, 190, 0.22);
 }
 
 .emoji {
@@ -95,5 +97,5 @@ main {
   text-align: center;
   color: var(--muted);
   font-size: 0.9rem;
-  border-top: 1px solid #e3e5ea;
+  border-top: 1px solid var(--line);
 }
